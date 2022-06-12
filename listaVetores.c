@@ -245,7 +245,14 @@ void imprimeVetor(float *v, int tam, char *nomeVetor)
   }
 }
 
-void ex6()
+void ex6() /* exercicio 6:
+-Construa uma função que retorne um vetor real (utilize alocação dinâmica de memória), com
+valores aleatórios entre 30 e 50 (intervalo fechado),  de tamanho N – passe o tamanho N por
+valor.
+-Construa  um  procedimento  para  imprimir  um  vetor  real  de  tamanho  N  –  passe  o  vetor  e  o
+tamanho N por valor (utilize a passagem de ponteiro representando o vetor a ser impresso)
+Escrever um programa que leia um valor e chame a função e o procedimentos criados.
+*/
 {
   float *A;
   int tamVetor;

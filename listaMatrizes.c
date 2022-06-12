@@ -10,12 +10,17 @@ função que dados os valores inicial e final devolva um número aleatório dent
 matriz e o valor correspondente, na forma de matriz.*/
   printf("\n\nQUESTAO NUMERO 7\n");
   srand(time(NULL));
+  int vmin, vmax;
+  printf("digite o valor minimo da matriz: "); // Como o professor explicou em sala, utilizar de variáveis para delimitar o valor minimo e máximo da matriz, em vez de números. Por base de correção do exercício, utilizar 15 e 50 (como é descrito no ex7).
+  scanf("%i", &vmin);
+  printf("digite o valor maximo da matriz: ");
+  scanf("%i", &vmax);
 
   for (int i = 0; i < 10; i++)
   {
     for (int j = 0; j < 10; j++)
     {
-      matriz[i][j] = (rand() % 36) + 15;
+      matriz[i][j] = (rand() % (vmax - vmin + 1)) + vmin;
     }
   }
 
